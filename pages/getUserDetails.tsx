@@ -325,7 +325,8 @@ const UserDetails: NextPage<Props> = ({ dirs }) => {
           // formData.append('ambition', ambition);
           formData.append('email', email);
           formData.append('phoneNo', phoneNumberWithoutSpaces);
-          formData.append('vehicle_type', selectedCarName);
+          // formData.append('vehicle_type', selectedCarName);
+          formData.append('vehicle_type', '.');
 
           // console.log('form data : ', formData);
           formData.forEach((value, key) => {
@@ -698,91 +699,6 @@ const UserDetails: NextPage<Props> = ({ dirs }) => {
 
 
                           </div> */}
-
-                          <div className="vehicle-row">
-                            <h6 className="text-white my-4">Select Your Dream Vehicle Type</h6>
-                            <div className="vehicle-column">
-                              {/* Benz */}
-                              <div className="vehicle-container">
-                                <Image
-                                  onClick={() => handleSelectedCarImage('/seylan/vehicle_types/Benz.png', 1, 'Benz')}
-                                  src="/seylan/vehicle_types/Benz.png"
-                                  alt="Benz"
-                                  className={`vehicle ${selectedCar === 1 ? 'selected' : ''}`}
-                                  id="1"
-                                  width={150}
-                                  height={100}
-                                />
-                                <div className="car-name-text">
-                                  <p>Benz</p>
-                                </div>
-                              </div>
-
-                              {/* BMW */}
-                              <div className="vehicle-container">
-                                <Image
-                                  onClick={() => handleSelectedCarImage('/seylan/vehicle_types/BMW.png', 2, 'BMW')}
-                                  src="/seylan/vehicle_types/BMW.png"
-                                  alt="BMW"
-                                  className={`vehicle ${selectedCar === 2 ? 'selected' : ''}`}
-                                  id="2"
-                                  width={150}
-                                  height={100}
-                                />
-                                <div className="car-name-text">
-                                  <p>BMW</p>
-                                </div>
-                              </div>
-
-                              {/* Ferrari */}
-                              <div className="vehicle-container">
-                                <Image
-                                  onClick={() => handleSelectedCarImage('/seylan/vehicle_types/ferrari.png', 3, 'Ferrari')}
-                                  src="/seylan/vehicle_types/ferrari.png"
-                                  alt="Ferrari"
-                                  className={`vehicle ${selectedCar === 3 ? 'selected' : ''}`}
-                                  id="3"
-                                  width={150}
-                                  height={100}
-                                />
-                                <div className="car-name-text">
-                                  <p>Ferrari</p>
-                                </div>
-                              </div>
-
-                              {/* Lamborghini */}
-                              <div className="vehicle-container">
-                                <Image
-                                  onClick={() => handleSelectedCarImage('/seylan/vehicle_types/Lambogini.png', 4, 'Lamborghini')}
-                                  src="/seylan/vehicle_types/Lambogini.png"
-                                  alt="Lamborghini"
-                                  className={`vehicle ${selectedCar === 4 ? 'selected' : ''}`}
-                                  id="4"
-                                  width={150}
-                                  height={100}
-                                />
-                                <div className="car-name-text">
-                                  <p>Lamborghini</p>
-                                </div>
-                              </div>
-
-                              {/* Porsche */}
-                              <div className="vehicle-container">
-                                <Image
-                                  onClick={() => handleSelectedCarImage('/seylan/vehicle_types/porche.png', 5, 'Porsche')}
-                                  src="/seylan/vehicle_types/porche.png"
-                                  alt="Porsche"
-                                  className={`vehicle ${selectedCar === 5 ? 'selected' : ''}`}
-                                  id="5"
-                                  width={150}
-                                  height={100}
-                                />
-                                <div className="car-name-text">
-                                  <p>Porsche</p>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
 
 
                           <label className="d-flex flex-row text-white text-start px-3 mt-2">
