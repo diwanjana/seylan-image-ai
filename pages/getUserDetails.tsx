@@ -412,11 +412,18 @@ const UserDetails: NextPage<Props> = ({ dirs }) => {
                 <div className="d-flex justify-content-center align-items-center align-items-lg-end  w-100">
                   <div className="d-flex flex-column justify-content-center align-items-center home-txt-container w-100">
                     <div className="conlainer-fluid m-0 px-3 px-lg-0 py-3 py-lg-5 my-3 my-lg-5 w-100 d-flex justify-content-center align-items-center">
-                      <div className="d-flex flex-column justify-content-center align-items-center text-center mt-5 pt-5 transparent-select-box">
+                      <div className="d-flex flex-column justify-content-center align-items-center text-center mt-5 pt-5 transparent-select-box bg-glass">
                         <div id="blur_background"></div>
-                        <h2 className="text-white font-36 ps-lg-5 ms-lg-5">
-                          ENTER YOUR DETAILS
+                        <h2 className="text-white font-bold font-36 ps-lg-5 ms-lg-5">
+                          YOUR JOURNEY TO FINANCIAL FREEDOM STARTS HERE!
                         </h2>
+                        <div className="d-flex flex-column justify-content-center align-items-center text-center mt-3 pt-3">
+                          <div className="text-white font-16 px-3 py-3 font-bold-1" style={{ maxWidth: '500px', backgroundColor: '#ff0000', borderRadius: '10px' }} >
+                            Share your Al-generated future on Facebook,
+                            tag Seylan Teens Facebook page with <b>#GenZCan</b>,
+                            and stand a chance to win exciting prizes!*
+                          </div>
+                        </div>
                         <form
                           onSubmit={handleSubmit}
                           className=" col-12 user-form  mt-2 mb-5 d-flex flex-column justify-content-center align-items-center"
@@ -425,7 +432,7 @@ const UserDetails: NextPage<Props> = ({ dirs }) => {
                             type="text"
                             required
                             placeholder="Name"
-                            className="mb-3 py-3 px-3 w-100 transparent-input"
+                            className="mb-3 py-3 px-3 w-100 transparent-input bg-glass"
                             onChange={(e) => setName(e.target.value)}
                           />
 
@@ -433,13 +440,13 @@ const UserDetails: NextPage<Props> = ({ dirs }) => {
                             type="number"
                             required
                             placeholder="Age"
-                            className="mb-3 py-3 px-3 w-100 transparent-input"
+                            className="mb-3 py-3 px-3 w-100 transparent-input bg-glass"
                             onChange={(e) => setAge(e.target.value)}
                           />
 
                           <select
                             name="gender"
-                            className="mb-3 py-3 px-3 w-100 form-select transparent-input"
+                            className="mb-3 py-3 px-3 w-100 form-select transparent-input bg-glass"
                             required
                             value={gender}
                             onChange={(e) => setGender(e.currentTarget.value)}
@@ -456,7 +463,7 @@ const UserDetails: NextPage<Props> = ({ dirs }) => {
                             type="email"
                             required
                             placeholder="Email"
-                            className="mb-3 py-3 px-3 w-100 transparent-input"
+                            className="mb-3 py-3 px-3 w-100 transparent-input bg-glass"
                             onChange={(e) => setEmail(e.target.value)}
                           />
 
@@ -464,7 +471,7 @@ const UserDetails: NextPage<Props> = ({ dirs }) => {
                             type="text"
                             required
                             placeholder="Your Whatsapp Number"
-                            className="mb-3 py-3 px-3 w-100 transparent-input"
+                            className="mb-3 py-3 px-3 w-100 transparent-input bg-glass"
                             onChange={(e) => {
                               setPhoneNo(e.target.value);
                               setPhoneError('');
@@ -478,7 +485,7 @@ const UserDetails: NextPage<Props> = ({ dirs }) => {
                             </span>
                           )}
                           <select
-                            className="mb-3 py-3 px-3 w-100 form-select transparent-input"
+                            className="mb-3 py-3 px-3 w-100 form-select transparent-input bg-glass"
                             required
                             name="profession"
                             value={profession}
@@ -502,7 +509,7 @@ const UserDetails: NextPage<Props> = ({ dirs }) => {
 
                           {profession === 'Other' && (
                             <input
-                              className="mb-3 py-3 px-3 w-100 transparent-input"
+                              className="mb-3 py-3 px-3 w-100 transparent-input bg-glass"
                               id="otherProfessionInput"
                               type="text"
                               placeholder="Enter Your Profession"
@@ -563,7 +570,7 @@ const UserDetails: NextPage<Props> = ({ dirs }) => {
                                 onChange={handleFileChange}
                                 style={{ maxHeight: '150px', width: 'auto' }}
                               />
-                              <div className="d-flex transparent-input transparent-img-input flex-column justify-content-center align-items-center py-3">
+                              <div className="d-flex transparent-input bg-glass transparent-img-input flex-column justify-content-center align-items-center py-3">
                                 <div
                                   className="d-flex flex-column rounded justify-content-center align-items-center cursor-pointer"
                                   style={{ maxHeight: '200px', width: 'auto' }}
@@ -774,13 +781,14 @@ const UserDetails: NextPage<Props> = ({ dirs }) => {
 
                           <div className='d-flex justify-content-center align-items-center'>
                             <button
-                              className="submit-btn text-center d-flex justify-content-center align-items-center my-3 px-3"
+                              className="submit-btn-home text-center d-flex justify-content-center align-items-center"
+                              style={{maxWidth: '300px', width: '100%'}}
                               type="submit"
                             >
                               {isLoading ? (
                                 <LoadingDots color="#fff" />
                               ) : (
-                                <p className="mb-0">NEXT</p>
+                                <p className="mb-0">Generate My Future!</p>
                               )}
                             </button>
                           </div>

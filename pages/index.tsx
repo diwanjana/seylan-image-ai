@@ -8,6 +8,7 @@ import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 import Layout from '@/components/layout';
 import Link from 'next/link';
+import styles from '@/styles/Home.module.css';
 
 interface ApiImage {
   id: string;
@@ -32,71 +33,66 @@ export default function Home() {
         setImages([]); // Fallback to empty array
       }
     };
-    
-
     fetchImages();
   }, []);
 
   return (
     <>
       <Layout>
-        <div className="container-fluid m-0 p-0 background_home">
-          <div className="home_slider_container p-0 m-0 position-relative">
+        <div className={`container-fluid m-0 p-0 ${styles.background_home}`}>
+          <div className={`home_slider_container p-0 m-0 position-relative ${styles.hero_container}`}>
             <div>
-              <div className="home_slider_image_container image1 p-0 m-0">
-                <div className="d-flex justify-content-center align-items-center w-100 hero-container" style={{minHeight:'100vh'}}>
-                  <div className="d-flex flex-column justify-content-center align-items-center home-txt-container">
-                    
-                    
-                  <Image
-                      src={'/Gen z can.png'}
+              <div className={`home_slider_image_container image1 p-0 m-0 ${styles.hero_image_container}`}>
+                <div className={`d-flex justify-content-center align-items-end pb-5 w-100 ${styles.hero_container}`} style={{ minHeight: '100vh' }}>
+                  <div className={`d-flex flex-column justify-content-center align-items-center ${styles.home_txt_container}`}>
+                    {/* <Image
+                      src={'/seylan/final_page/ai_image.png'}
                       height={500}
                       width={500}
                       alt=''
                       className='img-fluid genZ-img'
-                      
-                    />
+                    /> */}
                     <h2
-                      className="text-center px-2 text-white"
+                      className="text-center px-2 text-white d-flex justify-content-center"
                       style={{
                         fontWeight: 'bold',
                         fontSize: '20px',
-                        // marginTop: '60px',
                         width: '67%',
                       }}
                     >
-                     Live Your Life, Chase Your Dreams and Capture the moment
+                      <div className="text-xl see-future py-3" style={{ maxWidth: '500px' }}>
+                        <div>Your Future, Your Freedom</div>
+                        <div className="font-bold">
+                          See It Now!
+                        </div>
+                      </div>
                     </h2>
+                    <p className="text-center px-2 text-white text-xl" style={{ width: '67%' }}>
+                      Imagine your financial future and watch it come to life. Enter your details,
+                      and our AI will create a vision of your financial freedom!
+                    </p>
                     <Link
                       href="/getUserDetails"
                       className="d-flex justify-content-center align-items-center"
                     >
                       <button type="submit" className="mt-3 mb-5 submit-btn-home">
-                        Next
+                        See Your Future!
                       </button>
                     </Link>
-                    
                   </div>
                 </div>
-                {/* <div className="d-flex justify-content-center align-items-center b-space w-100 sub-container">
-                  <div className="d-flex flex-column justify-content-center align-items-center home-txt-container">
-                  
-                    
-                  </div>
-                </div> */}
               </div>
             </div>
           </div>
         </div>
 
-        <div className="container-fluid m-0 background_slider p-0">
-          <div className="slider_container p-0 m-0 position-relative">
+        <div className={`container-fluid m-0 ${styles.background_slider} p-0`}>
+          <div className={`slider_container p-0 m-0 position-relative ${styles.slider_container}`}>
             <Link
               className="gallery_link"
               href='/imageSwiper'
-              // href="https://dashboard.seylanteens.com/api/get-completed-images"
             >
-              <h3>Image Swiper</h3>
+              <h3>Gallery</h3>
             </Link>
             <Swiper
               modules={[Navigation, Pagination, Scrollbar, A11y]}
@@ -120,14 +116,15 @@ export default function Home() {
               }}
             >
               {images.map((image) => (
-                <SwiperSlide key={image.id} style={{ padding: '10px' }}>
+                //  style={{ padding: '10px' }}
+                <SwiperSlide key={image.id}>
                   <Link href="#">
                     <Image
                       src={image.image_url}
                       alt={`Image ${image.id}`}
                       width={250}
                       height={250}
-                      className="img-fluid rounded-3"
+                      className="img-fluid" // rounded-3
                     />
                   </Link>
                 </SwiperSlide>

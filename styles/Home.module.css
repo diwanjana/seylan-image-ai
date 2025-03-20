@@ -262,4 +262,62 @@
       text-align: center;
     }
   }
+
+  .background_home {
+    background-image: url('/seylan/bg-home.jpg');
+    background-size: cover;
+    background-position: center;
+  }
   
+  .hero_container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .home_txt_container {
+    text-align: center;
+    color: white;
+  }
+  
+  .submit-btn-home {
+    background-color: #ff0000;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .background_slider {
+    background-color: #f8f9fa;
+  }
+  
+  .slider_container {
+    padding: 20px;
+  }
+  
+  .gallery_link {
+    text-align: center;
+    display: block;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #000;
+  }
+  
+  .gallery_link:hover {
+    text-decoration: underline;
+  }
+
+  .navbar_background {
+    background-color: #bb0e0d;
+  }
+
+  .footer_background {
+    background-color: #bb0e0d;
+  }
+
+  .text-white {
+    color: white !important;
+  }
