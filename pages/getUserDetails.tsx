@@ -580,15 +580,27 @@ const UserDetails: NextPage<Props> = ({ dirs }) => {
 
                                   {url ? (
 
-                                    <img src={url} alt="" style={{ maxHeight: '150px', width: 'auto' }} />
+                                    <Image 
+                                      src={url} 
+                                      alt="" 
+                                      width={300}
+                                      height={200}
+                                      style={{ maxHeight: '150px', width: 'auto' }}
+                                    />
 
                                   ) : selectedImage ? (
 
-                                    <img src={selectedImage} alt="" style={{ maxHeight: '150px', width: 'auto' }} />
+                                    <Image 
+                                      src={selectedImage} 
+                                      alt="" 
+                                      width={300}
+                                      height={200}
+                                      style={{ maxHeight: '150px', width: 'auto' }}
+                                    />
                                   ) : (
 
                                     <span
-                                      className="text-white mb-2 py-3 px-3 w-100  d-flex flex-column justify-content-center align-items-center"
+                                      className="text-white mb-2 py-3 px-3 w-100 d-flex flex-column justify-content-center align-items-center"
                                       style={{ height: '200px !important' }}
                                     >
                                       <h5 className='drop-image-text1'>Drop or Capture a Image</h5>{' '}
@@ -692,12 +704,14 @@ const UserDetails: NextPage<Props> = ({ dirs }) => {
                             <div className="vehicle-column">
                               {/* Benz */}
                               <div className="vehicle-container">
-                                <img
+                                <Image
                                   onClick={() => handleSelectedCarImage('/seylan/vehicle_types/Benz.png', 1, 'Benz')}
                                   src="/seylan/vehicle_types/Benz.png"
                                   alt="Benz"
                                   className={`vehicle ${selectedCar === 1 ? 'selected' : ''}`}
                                   id="1"
+                                  width={150}
+                                  height={100}
                                 />
                                 <div className="car-name-text">
                                   <p>Benz</p>
@@ -706,12 +720,14 @@ const UserDetails: NextPage<Props> = ({ dirs }) => {
 
                               {/* BMW */}
                               <div className="vehicle-container">
-                                <img
+                                <Image
                                   onClick={() => handleSelectedCarImage('/seylan/vehicle_types/BMW.png', 2, 'BMW')}
                                   src="/seylan/vehicle_types/BMW.png"
                                   alt="BMW"
                                   className={`vehicle ${selectedCar === 2 ? 'selected' : ''}`}
                                   id="2"
+                                  width={150}
+                                  height={100}
                                 />
                                 <div className="car-name-text">
                                   <p>BMW</p>
@@ -720,12 +736,14 @@ const UserDetails: NextPage<Props> = ({ dirs }) => {
 
                               {/* Ferrari */}
                               <div className="vehicle-container">
-                                <img
-                                  onClick={() => handleSelectedCarImage('/seylan/vehicle_types/Ferrari.png', 3, 'Ferrari')}
+                                <Image
+                                  onClick={() => handleSelectedCarImage('/seylan/vehicle_types/ferrari.png', 3, 'Ferrari')}
                                   src="/seylan/vehicle_types/ferrari.png"
                                   alt="Ferrari"
                                   className={`vehicle ${selectedCar === 3 ? 'selected' : ''}`}
                                   id="3"
+                                  width={150}
+                                  height={100}
                                 />
                                 <div className="car-name-text">
                                   <p>Ferrari</p>
@@ -734,12 +752,14 @@ const UserDetails: NextPage<Props> = ({ dirs }) => {
 
                               {/* Lamborghini */}
                               <div className="vehicle-container">
-                                <img
+                                <Image
                                   onClick={() => handleSelectedCarImage('/seylan/vehicle_types/Lambogini.png', 4, 'Lamborghini')}
                                   src="/seylan/vehicle_types/Lambogini.png"
                                   alt="Lamborghini"
                                   className={`vehicle ${selectedCar === 4 ? 'selected' : ''}`}
                                   id="4"
+                                  width={150}
+                                  height={100}
                                 />
                                 <div className="car-name-text">
                                   <p>Lamborghini</p>
@@ -748,12 +768,14 @@ const UserDetails: NextPage<Props> = ({ dirs }) => {
 
                               {/* Porsche */}
                               <div className="vehicle-container">
-                                <img
+                                <Image
                                   onClick={() => handleSelectedCarImage('/seylan/vehicle_types/porche.png', 5, 'Porsche')}
                                   src="/seylan/vehicle_types/porche.png"
                                   alt="Porsche"
                                   className={`vehicle ${selectedCar === 5 ? 'selected' : ''}`}
                                   id="5"
+                                  width={150}
+                                  height={100}
                                 />
                                 <div className="car-name-text">
                                   <p>Porsche</p>

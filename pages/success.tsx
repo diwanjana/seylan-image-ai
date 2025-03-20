@@ -24,13 +24,8 @@ const Success = () => {
                             <div className="d-flex flex-column justify-content-center align-items-center text-center bg-glass" style={{ maxWidth: "800px" }} >
                                 <h2 className="text-xl font-bold font-36 mt-5">Thank you</h2>
                                 <p className="text-lg font-bold-2 font-20 mb-3" style={{ fontSize: "22px !important", fontWeight: "600 !important", maxWidth: "600px" }}>
-                                    {/* Your Image is now being generated and you will receive it shortly via email and Whatsapp */}
-                                    Your dreams are closer than you think—start making them a reality today with Seylan Bank!
-
+                                    Your dreams are closer than you think&mdash;start making them a reality today with Seylan Bank!
                                 </p>
-                                {/* <p className="text-white font-20 mb-3" style={{fontSize: "22px !important", fontWeight:"600 !important"}}>
-                                Within 48 hours we will be sending it to your e-mail and/or WhatsApp number.
-                                </p> */}
                                 <Image
                                     src={'/correct.png'}
                                     className="correct-img mb-5"
@@ -47,7 +42,7 @@ const Success = () => {
 
                                 {/* </Link> */}
 
-                                {/* <p className="text-white font-18 mb-3">
+                               {/* <p className="text-white font-18 mb-3">
                                     Do you like to see your path to becoming a {ambition}?
                                 </p> */}
                             </div>
@@ -61,64 +56,64 @@ const Success = () => {
                 </div>
             </div>
             <div className="celebrate-section text-center mt-5" style={{ maxWidth: "900px", margin: "3rem auto" }}>
-                <h2 className="font-bold text-2xl mb-4">Let's Celebrate</h2>
-                <p className="text-lg mb-4">The world's TeensDay with Seylan Teens debit card offers</p>
+                <h2 className="font-bold text-2xl mb-4">Let&apos;s Celebrate</h2>
+                <p className="text-lg mb-4">The world&apos;s TeensDay with Seylan Teens debit card offers</p>
                 <div className="offers-grid p-3">
                     <div className="offer-item">
                         <div>
                             <h3 className="text-xl"><b>20%</b> Off</h3>
                             <p>Off on Total Bill - <b>14th MAR - 15th APR</b></p>
                         </div>
-                        <img src="/seylan/offers/street82-logo.png" alt="Street 82" />
+                        <Image src="/seylan/offers/street82-logo.png" alt="Street 82" width={100} height={100} />
                     </div>
                     <div className="offer-item">
                         <div>
                             <h3 className="text-xl"><b>10%</b> Off</h3>
                             <p>Off on Total Bill - <b>26th MARCH</b></p>
                         </div>
-                        <img src="/seylan/offers/arpico-logo.png" alt="Arpico" />
+                        <Image src="/seylan/offers/arpico-logo.png" alt="Arpico" width={100} height={100} />
                     </div>
                     <div className="offer-item">
                         <div>
                             <h3 className="text-xl"><b>25%</b> Off</h3>
                             <p>Teens card - <b>Until 30th APRIL</b></p>
                         </div>
-                        <img src="/seylan/offers/promate-logo.png" alt="ProMate" />
+                        <Image src="/seylan/offers/promate-logo.png" alt="ProMate" width={100} height={100} />
                     </div>
                     <div className="offer-item">
                         <div>
                             <h3 className="text-xl"><b>20%</b> Off</h3>
                             <p>Off on Total Bill - <b>Until 30th APRIL</b></p>
                         </div>
-                        <img src="/seylan/offers/atlas-logo.png" alt="Atlas" />
+                        <Image src="/seylan/offers/atlas-logo.png" alt="Atlas" width={100} height={100} />
                     </div>
                     <div className="offer-item">
                         <div>
                             <h3 className="text-xl"><b>20%</b> Off</h3>
-                            <p>Off on Total Bill - <b>MARCH 15th, 22nd & 29th</b></p>
+                            <p>Off on Total Bill - <b>MARCH 15th, 22nd &amp; 29th</b></p>
                         </div>
-                        <img src="/seylan/offers/glomark-logo.png" alt="Glomark" />
+                        <Image src="/seylan/offers/glomark-logo.png" alt="Glomark" width={100} height={100} />
                     </div>
                     <div className="offer-item">
                         <div>
                             <h3 className="text-xl"><b>15%</b> Off</h3>
-                            <p>Off on Total Bill - <b>March 24th & 25th</b></p>
+                            <p>Off on Total Bill - <b>March 24th &amp; 25th</b></p>
                         </div>
-                        <img src="/seylan/offers/edge-logo.png" alt="Edge" />
+                        <Image src="/seylan/offers/edge-logo.png" alt="Edge" width={100} height={100} />
                     </div>
                     <div className="offer-item">
                         <div>
                             <h3 className="text-xl"><b>20%</b> Off</h3>
-                            <p>Burley's Dinomore, Isso, & more - <b>Until 31st MARCH</b></p>
+                            <p>Burley&apos;s Dinomore, Isso, &amp; more - <b>Until 31st MARCH</b></p>
                         </div>
-                        <img src="/seylan/offers/mintpay-logo.png" alt="Dinomore" />
+                        <Image src="/seylan/offers/mintpay-logo.png" alt="Dinomore" width={100} height={100} />
                     </div>
                     <div className="offer-item">
                         <div>
                             <h3 className="text-xl"><b>15%</b> Off</h3>
-                            <p>CashBack Mintpay "pay Now" At Burger King - <b>Until 31st MARCH</b></p>
+                            <p>CashBack Mintpay &quot;pay Now&quot; At Burger King - <b>Until 31st MARCH</b></p>
                         </div>
-                        <img src="/seylan/offers/mintpay-logo.png" alt="Mintpay" />
+                        <Image src="/seylan/offers/mintpay-logo.png" alt="Mintpay" width={100} height={100} />
                     </div>
                 </div>
             </div>
