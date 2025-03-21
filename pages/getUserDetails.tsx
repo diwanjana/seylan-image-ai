@@ -240,6 +240,9 @@ const UserDetails: NextPage<Props> = ({ dirs }) => {
   };
 
   const validateEmail = (email: string) => {
+    if (email === '') {
+      return true;
+    }
     const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
     if (!emailPattern.test(email)) {
@@ -464,7 +467,6 @@ const UserDetails: NextPage<Props> = ({ dirs }) => {
 
                           <input
                             type="email"
-                            required
                             placeholder="Email"
                             className="mb-3 py-3 px-3 w-100 transparent-input bg-glass-input"
                             onChange={(e) => setEmail(e.target.value)}
