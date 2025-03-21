@@ -68,7 +68,7 @@ const UserDetails: NextPage<Props> = ({ dirs }) => {
   const [age, setAge] = useState('');
   const videoConstraints = {
     width: 200,
-    facingMode: "environment"
+    facingMode: "user"
   }
 
   const webcamRef = useRef<Webcam>(null);
