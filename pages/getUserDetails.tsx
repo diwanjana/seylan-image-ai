@@ -435,7 +435,7 @@ const UserDetails: NextPage<Props> = ({ dirs }) => {
                             type="text"
                             required
                             placeholder="Name"
-                            className="mb-3 py-3 px-3 w-100 transparent-input bg-glass"
+                            className="mb-3 py-3 px-3 w-100 transparent-input bg-glass-input"
                             onChange={(e) => setName(e.target.value)}
                           />
 
@@ -443,13 +443,13 @@ const UserDetails: NextPage<Props> = ({ dirs }) => {
                             type="number"
                             required
                             placeholder="Age"
-                            className="mb-3 py-3 px-3 w-100 transparent-input bg-glass"
+                            className="mb-3 py-3 px-3 w-100 transparent-input bg-glass-input"
                             onChange={(e) => setAge(e.target.value)}
                           />
 
                           <select
                             name="gender"
-                            className="mb-3 py-3 px-3 w-100 form-select transparent-input bg-glass"
+                            className="mb-3 py-3 px-3 w-100 form-select transparent-input bg-glass-input"
                             required
                             value={gender}
                             onChange={(e) => setGender(e.currentTarget.value)}
@@ -466,7 +466,7 @@ const UserDetails: NextPage<Props> = ({ dirs }) => {
                             type="email"
                             required
                             placeholder="Email"
-                            className="mb-3 py-3 px-3 w-100 transparent-input bg-glass"
+                            className="mb-3 py-3 px-3 w-100 transparent-input bg-glass-input"
                             onChange={(e) => setEmail(e.target.value)}
                           />
 
@@ -474,7 +474,7 @@ const UserDetails: NextPage<Props> = ({ dirs }) => {
                             type="text"
                             required
                             placeholder="Your Whatsapp Number"
-                            className="mb-3 py-3 px-3 w-100 transparent-input bg-glass"
+                            className="mb-3 py-3 px-3 w-100 transparent-input bg-glass-input"
                             onChange={(e) => {
                               setPhoneNo(e.target.value);
                               setPhoneError('');
@@ -488,7 +488,7 @@ const UserDetails: NextPage<Props> = ({ dirs }) => {
                             </span>
                           )}
                           <select
-                            className="mb-3 py-3 px-3 w-100 form-select transparent-input bg-glass"
+                            className="mb-3 py-3 px-3 w-100 form-select transparent-input bg-glass-input"
                             required
                             name="profession"
                             value={profession}
@@ -512,7 +512,7 @@ const UserDetails: NextPage<Props> = ({ dirs }) => {
 
                           {profession === 'Other' && (
                             <input
-                              className="mb-3 py-3 px-3 w-100 transparent-input bg-glass"
+                              className="mb-3 py-3 px-3 w-100 transparent-input bg-glass-input"
                               id="otherProfessionInput"
                               type="text"
                               placeholder="Enter Your Profession"
@@ -527,7 +527,7 @@ const UserDetails: NextPage<Props> = ({ dirs }) => {
 
                           <select
                             name="teens_acc_holder"
-                            className="mb-3 py-3 px-3 w-100 form-select transparent-input bg-glass"
+                            className="mb-3 py-3 px-3 w-100 form-select transparent-input bg-glass-input"
                             required
                             value={teensAccHolder}
                             onChange={(e) => setTeensAccHolder(e.currentTarget.value)}
@@ -585,7 +585,7 @@ const UserDetails: NextPage<Props> = ({ dirs }) => {
                                 onChange={handleFileChange}
                                 style={{ maxHeight: '150px', width: 'auto' }}
                               />
-                              <div className="d-flex transparent-input bg-glass transparent-img-input flex-column justify-content-center align-items-center py-3">
+                              <div className="d-flex transparent-input bg-glass-input transparent-img-input flex-column justify-content-center align-items-center py-3">
                                 <div
                                   className="d-flex flex-column rounded justify-content-center align-items-center cursor-pointer"
                                   style={{ maxHeight: '200px', width: 'auto' }}
