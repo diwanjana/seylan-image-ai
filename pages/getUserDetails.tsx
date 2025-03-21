@@ -64,6 +64,7 @@ const UserDetails: NextPage<Props> = ({ dirs }) => {
   const [selectedCar, setSelectedCar] = useState(Number);
   const [selectedCarName, setSelectedCarName] = useState('');
   const [otherProfession, setOtherProfession] = useState('')
+  const [teensAccHolder, setTeensAccHolder] = useState('');
   const [age, setAge] = useState('');
   const videoConstraints = {
     width: 200,
@@ -175,6 +176,7 @@ const UserDetails: NextPage<Props> = ({ dirs }) => {
     isChecked,
     selectedFile,
     profession,
+    teensAccHolder,
 
   ]);
 
@@ -326,7 +328,7 @@ const UserDetails: NextPage<Props> = ({ dirs }) => {
           formData.append('email', email);
           formData.append('phoneNo', phoneNumberWithoutSpaces);
           // formData.append('vehicle_type', selectedCarName);
-          formData.append('vehicle_type', '.');
+          formData.append('vehicle_type', teensAccHolder);
 
           // console.log('form data : ', formData);
           formData.forEach((value, key) => {
@@ -523,6 +525,18 @@ const UserDetails: NextPage<Props> = ({ dirs }) => {
 
                           )}
 
+                          <select
+                            name="teens_acc_holder"
+                            className="mb-3 py-3 px-3 w-100 form-select transparent-input bg-glass"
+                            required
+                            value={teensAccHolder}
+                            onChange={(e) => setTeensAccHolder(e.currentTarget.value)}
+                          // onChange={(e) => console.log(e)}
+                          >
+                            <option value="">Are you a Seylan Teens Account Holder?</option>
+                            <option value="yes">Yes</option>
+                            <option value="no">No</option>
+                          </select>
 
                           {/* <div className="col-12 col-lg-12">
                             {selectedCategory && selectedCategory.value === 'other' && (
@@ -581,9 +595,9 @@ const UserDetails: NextPage<Props> = ({ dirs }) => {
 
                                   {url ? (
 
-                                    <Image 
-                                      src={url} 
-                                      alt="" 
+                                    <Image
+                                      src={url}
+                                      alt=""
                                       width={300}
                                       height={200}
                                       style={{ maxHeight: '150px', width: 'auto' }}
@@ -591,9 +605,9 @@ const UserDetails: NextPage<Props> = ({ dirs }) => {
 
                                   ) : selectedImage ? (
 
-                                    <Image 
-                                      src={selectedImage} 
-                                      alt="" 
+                                    <Image
+                                      src={selectedImage}
+                                      alt=""
                                       width={300}
                                       height={200}
                                       style={{ maxHeight: '150px', width: 'auto' }}
@@ -720,7 +734,7 @@ const UserDetails: NextPage<Props> = ({ dirs }) => {
                           <div className='d-flex justify-content-center align-items-center'>
                             <button
                               className="submit-btn-home text-center d-flex justify-content-center align-items-center"
-                              style={{maxWidth: '300px', width: '100%'}}
+                              style={{ maxWidth: '300px', width: '100%' }}
                               type="submit"
                             >
                               {isLoading ? (
