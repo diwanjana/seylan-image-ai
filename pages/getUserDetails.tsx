@@ -347,7 +347,7 @@ const UserDetails: NextPage<Props> = ({ dirs }) => {
 
             // https://dashboard.yourvibe.lk/api/save-customer-data
             const response = await fetch(
-              'https://dashboard.seylanteens.com/api/save-customer-data',
+              'http://dashboard.seylanteens.com/api/save-customer-data',
               {
                 method: 'POST',
                 body: formData,
@@ -568,7 +568,7 @@ const UserDetails: NextPage<Props> = ({ dirs }) => {
                                 videoConstraints={videoConstraints}
                               />
 
-                              <button className='submit-btn my-3' onClick={capturePhoto}>Capture</button>
+                              <button type="button" className='submit-btn my-3' onClick={capturePhoto}>Capture</button>
 
 
                             </div>
