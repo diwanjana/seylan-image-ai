@@ -423,13 +423,13 @@ const UserDetails: NextPage<Props> = ({ dirs }) => {
                         <h2 className="text-white font-bold font-36 ps-lg-5 ms-lg-5">
                           YOUR JOURNEY TO FINANCIAL FREEDOM STARTS HERE!
                         </h2>
-                        <div className="d-flex flex-column justify-content-center align-items-center text-center mt-3 pt-3">
+                        {/* <div className="d-flex flex-column justify-content-center align-items-center text-center mt-3 pt-3">
                           <div className="text-white font-16 px-3 py-3 font-bold-1" style={{ maxWidth: '500px', backgroundColor: '#ff0000', borderRadius: '10px' }} >
                             Share your Al-generated future on Facebook,
                             tag Seylan Teens Facebook page with <b>#GenZCan</b>,
                             and stand a chance to win exciting prizes!*
                           </div>
-                        </div>
+                        </div> */}
                         <form
                           onSubmit={handleSubmit}
                           className=" col-12 user-form  mt-2 mb-5 d-flex flex-column justify-content-center align-items-center"
