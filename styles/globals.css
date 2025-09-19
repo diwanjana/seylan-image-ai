@@ -666,7 +666,7 @@ option {
   line-height: 40px;
   font-style: normal;
   text-align: left;
-  color: #fff !important;
+  color: #000 !important;
 }
 
 .navbar-brand {
