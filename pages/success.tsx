@@ -16,7 +16,7 @@ const Success = () => {
 
     return (
         <Layout>
-            <div className="celebrate-section text-center mt-5" style={{ maxWidth: "900px", margin: "3rem auto" }}>
+            {/* <div className="celebrate-section text-center mt-5" style={{ maxWidth: "900px", margin: "3rem auto" }}>
                 <h2 className="font-bold text-2xl mb-4">Let&apos;s Celebrate</h2>
                 <p className="text-lg mb-4">The world&apos;s TeensDay with Seylan Teens debit card offers</p>
                 <div className="offers-grid p-3">
@@ -77,7 +77,7 @@ const Success = () => {
                         <Image src="/seylan/offers/mintpay-logo.png" alt="Mintpay" width={100} height={100} />
                     </div>
                 </div>
-            </div>
+            </div> */}
             <div className="container-fluid m-0 p-0 background_success">
                 <div className="home_slider_container p-0 m-0 position-relative">
                     <div>
